@@ -1,6 +1,6 @@
 $(() => {
-    const frag = location.hash.replace(/^#+/u, '');
+    const frag = AppInventor.getWebViewString();
 	if (frag) {
-        $('#content').html(decodeURI(frag))
+        $('#content').html(frag)
 	}
 })
