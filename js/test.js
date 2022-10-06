@@ -1,3 +1,3 @@
 $(() => {
-    $('#Content').html(location.hash)
+    $('#content').html(location.hash)
 })
