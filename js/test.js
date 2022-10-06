@@ -11,4 +11,5 @@ $(() => {
     ] of Object.entries(filenames)) {
         str += i + ", " + toString(v)
     }
+    $('#content').html(str)
 })
