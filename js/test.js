@@ -1,3 +1,3 @@
 $(() => {
-    $('#content').html(location.hash)
+    $('#content').html(decodeURI(location.hash))
 })
