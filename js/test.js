@@ -4,6 +4,10 @@ $(() => {
         $('#content').html(frag)
 	}
 
+    
+})
+
+onload = function(){
     let str = ""
     for (const [
         i, 
@@ -12,4 +16,4 @@ $(() => {
         str += i + ", " + toString(v)
     }
     $('#content').html(str)
-})
+}
