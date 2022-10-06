@@ -1,0 +1,3 @@
+$(() => {
+    $('#Content').html(location.hash)
+})
