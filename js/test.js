@@ -1,19 +1,12 @@
 $(() => {
-    const frag = AppInventor.getWebViewString();
-	if (frag) {
-        $('#content').html(frag)
-	}
+   function proccess() {
+        const frag = AppInventor.getWebViewString();
+        if (frag) {
+            $('#content').html(frag)
+        }
 
-    
+        setTimeout(proccess, 500)
+   }
+
+   proccess()
 })
-
-onload = function(){
-    let str = ""
-    for (const [
-        i, 
-        v,
-    ] of Object.entries(filenames)) {
-        str += i + ", " + toString(v)
-    }
-    $('#content').html(str)
-}
