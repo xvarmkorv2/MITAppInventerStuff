@@ -5,7 +5,7 @@ $(() => {
             $('#content').html(frag)
         }
 
-        setTimeout(proccess, 500)
+        setTimeout(proccess, 100)
    }
 
    proccess()
